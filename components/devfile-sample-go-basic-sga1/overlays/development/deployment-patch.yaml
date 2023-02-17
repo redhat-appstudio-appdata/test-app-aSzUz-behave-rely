@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-sga1
+  namespace: rh-ee-jsmid-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:6fbb26cfe1e9557b80b694935c6537a4411915149c1b224991962b20f9d62023
+        name: my-go
+        resources: {}
+status: {}
