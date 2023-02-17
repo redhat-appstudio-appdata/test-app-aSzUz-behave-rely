@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-mrpe
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:aSzUz-devfile-sample-mrpe
+      - image: quay.io/redhat-appstudio/user-workload@sha256:aa5ec6e51bd8235e90876f9a62aa8c2b44fa504d1de31d5fb37dd88cc8a6fde9
         name: my-nodejs
         ports:
         - containerPort: 3001
